@@ -1,17 +1,52 @@
 @font-face {
     font-family: redRose;
-    src: url('./assets/fonts/RedRose-Regular.ttf');
+    src: url('./assets/fonts/RedRose-Regular.ttf'); 
+    font-weight: normal;
+}
+@font-face {
+    font-family: redRose;
+    src: url('./assets/fonts/RedRose-Bold.ttf');
+        font-weight: bold;
+}
+
+@font-face {
+    font-family: poppins;
+    src: url('./assets/fonts/Poppins-Regular.ttf');
+    font-weight: normal;
+}
+@font-face {
+    font-family: poppins;
+    src: url('./assets/fonts/Poppins-Bold.ttf');
+    font-weight: bold;
 }
 
 /*  main variables  */
 
-$main-color: #A02279;
+$main-theme: #A02279;
+$main-font-color: #434343; 
+$second-font-color: #fff; 
+$border-color: #A3A3A3;
+$main-font: redRose;
+$second-font: poppins;
+
 
 
 *{
     padding: 0;
     box-sizing: border-box;
     margin: 0;
-    font-family: redRose;
+    font-family: $main-font;
+}
+
+.btn{
+    width: 170px;
+    height: 48px;
+    border-radius:10px;
+    border: none;
+    cursor: pointer;
+    font-weight: normal;
+}
+
+.App{
     
 }

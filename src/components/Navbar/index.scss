@@ -1,0 +1,52 @@
+@use '../../App.scss';
+
+#nav{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    text-transform: uppercase;
+
+
+    & > #nav__logo, #nav__list{
+        display: flex;
+        align-items: center;
+        justify-content:center;
+    }
+
+
+    #nav__logo {
+        gap: 5px;
+    }
+
+    #nav__list{
+
+        gap: 50px;
+
+        .nav__list--item{
+            text-decoration: none;
+            color: App.$main-font-color;
+            padding: 10px;
+            transition: ease all 0.2s;
+
+            &:hover{
+                background-color: App.$main-theme;
+                color: App.$second-font-color;
+            }
+        }
+
+    }
+
+    .nav__btn{
+        background-color: App.$main-theme;
+        color: App.$second-font-color;
+        transition: ease all 0.2s;
+        font-size: 1rem;
+
+        &:hover{
+            border: 2px solid App.$main-theme;
+            color: App.$main-theme;
+            background-color: App.$second-font-color;
+        }
+    }
+
+}

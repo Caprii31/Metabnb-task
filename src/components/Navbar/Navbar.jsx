@@ -2,13 +2,14 @@ import React from 'react'
 import logoImg from '../../assets/images/logo-img.png'
 import logoText from '../../assets/images/logo-text.png'
 import { Link } from 'react-router-dom'
+import './index.scss'
 
 function Navbar() {
   return (
-    <>
-        <div id="logo__container">
-          <img src={logoImg} alt="" id="logo__img" />
-          <img src={logoText} alt="" id="logo__img" />
+    <nav id='nav'>
+        <div id="nav__logo">
+          <img src={logoImg} alt="" id="nav__logo--img" />
+          <img src={logoText} alt="" id="nav__logo--text" />
         </div>
         <div id="nav__list">
           <Link to='/home' className="nav__list--item">Home</Link>
@@ -17,7 +18,7 @@ function Navbar() {
           <Link to='/community' className="nav__list--item">community</Link>
         </div>
         <button className="nav__btn btn">connect to wallet</button>
-    </>
+    </nav>
   )
 }
 
