@@ -36,15 +36,17 @@ $second-font: poppins;
     box-sizing: border-box;
     margin: 0;
     font-family: $main-font;
+    color: $main-font-color;
 }
 
 .btn{
     width: 170px;
-    height: 48px;
+    height: 54px;
     border-radius:10px;
     border: none;
     cursor: pointer;
     font-weight: normal;
+    font-size: 1rem;
 }
 
 .App{
