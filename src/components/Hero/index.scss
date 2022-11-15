@@ -5,7 +5,7 @@
     align-items: center;
     width: 100%;
     padding: 50px 0;
-    padding: 50px 100px 50px 100px;
+    padding: App.$l-padding;
 
    #hero__text{
         display: flex;
@@ -64,7 +64,6 @@
 
 
    #hero__images{
-
         display:grid;
         grid-template-columns: 150px 234px 234px;
         grid-template-rows: repeat(5,88px);

@@ -5,12 +5,16 @@ import { Link } from 'react-router-dom'
 import './index.scss'
 
 function Navbar() {
+console.log(window.innerWidth)
+  
   return (
     <nav id='nav'>
         <div id="nav__logo">
           <img src={logoImg} alt="" id="nav__logo--img" />
           <img src={logoText} alt="" id="nav__logo--text" />
         </div>
+        {/* <a href="#" class="toggle-mnu hidden-lg"><span></span></a> */}
+
         <div id="nav__list">
           <Link to='/home' className="nav__list--item">Home</Link>
           <Link to='/place-to-stay' className="nav__list--item">place to stay</Link>
