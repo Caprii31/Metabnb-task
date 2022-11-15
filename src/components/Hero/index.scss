@@ -1,21 +1,21 @@
 @use '../../App.scss';
 
-#main{
+#hero{
     display: flex;
     align-items: center;
-    gap: 200px;
     width: 100%;
     padding: 50px 0;
 
-    #main__text{
+   #hero__text{
         display: flex;
         flex-direction: column;
         gap: 40px;
         max-width: 50%;
+        flex-shrink: 2;
 
 
 
-        #main__text--header{
+       #hero__text--header{
             font-size: 2.8rem;
             text-transform: uppercase;
 
@@ -24,11 +24,11 @@
             }
         }
 
-        #main__text--par{
+       #hero__text--par{
             font-size: 24px;
         }
 
-        #main__text--search{
+       #hero__text--search{
             display: flex;
             align-items: center;
             
@@ -38,9 +38,12 @@
                 height: 54px;
                 border-radius: 10px 0 0 10px;
                 border: 1px solid App.$border-color;
+                padding-left: 10px;
+                font-size: 1rem;
+                outline:none;
             }
 
-            .main__text--search--btn{
+            .hero__text--search--btn{
                 border-radius: 0 10px 10px 0;
                 background-color: App.$main-theme;
                 color: App.$second-font-color;
@@ -50,22 +53,22 @@
     }
 
 
-    #main__images{
+   #hero__images{
 
         display:grid;
-        grid-template-columns: repeat(2,234px) ;
+        grid-template-columns: 150px 234px 234px;
         grid-template-rows: repeat(5,88px);
         gap: 5px;
         grid-template-areas: 
-        '. img2'
-        'img1 img2'
-        'img1 img4'
-        'img3 img4'
-        'img3 .'
+        '. . img2'
+        '. img1 img2'
+        '. img1 img4'
+        '. img3 img4'
+        '. img3 .'
         ;
 
 
-        .main__images--img{
+        .hero__images--img{
             &:nth-child(1){
                 grid-area: img1;
             }

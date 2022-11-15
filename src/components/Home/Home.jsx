@@ -1,6 +1,6 @@
 import React from 'react'
 import Navbar from '../Navbar/Navbar'
-import Main from '../Main/Main'
+import Hero from '../Hero/Hero'
 import './index.scss'
 
 
@@ -8,7 +8,7 @@ function Home() {
   return (
     <div id="home">
         <Navbar />
-        <Main />
+        <Hero />
     </div>
   )
 }
