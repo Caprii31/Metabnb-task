@@ -20,14 +20,20 @@
     font-weight: bold;
 }
 
+@font-face {
+    font-family: roboto;
+    src: url('./assets//fonts/RobotoMono-Regular.ttf');
+}
+
 /*  main variables  */
 
 $main-theme: #A02279;
 $main-font-color: #434343; 
 $second-font-color: #fff; 
-$border-color: #A3A3A3;
+$border-color: #D7D7D7;
 $main-font: redRose;
 $second-font: poppins;
+$third-font: roboto;
 
 
 
@@ -47,6 +53,7 @@ $second-font: poppins;
     cursor: pointer;
     font-weight: normal;
     font-size: 1rem;
+    outline: none;
 }
 
 .App{

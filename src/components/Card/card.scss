@@ -1,0 +1,52 @@
+@use '../../App.scss';
+
+
+#card{
+    border: 1px solid App.$border-color;
+    width: fit-content;
+    font-size: 12px;
+    padding:10px;
+    border-radius:10px;
+
+    img{
+        width: 260px;
+        height:265px;
+        margin-bottom: 10px;
+    }
+
+    #card__text{
+        display: flex;
+        justify-content:space-between;
+
+        & > * {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            
+        }
+        
+
+
+        #card__text--left{
+            
+            #card__text--left--stars{
+                display: flex;
+                gap: 7px;
+
+                img{
+                    width:12px;
+                    height:12px;
+                }
+
+            }
+
+            
+        }
+
+        #card__text--right{
+            align-items:flex-end;
+        }
+    }
+
+
+}

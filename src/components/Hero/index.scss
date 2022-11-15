@@ -5,6 +5,7 @@
     align-items: center;
     width: 100%;
     padding: 50px 0;
+    padding: 50px 100px 50px 100px;
 
    #hero__text{
         display: flex;
@@ -48,6 +49,15 @@
                 background-color: App.$main-theme;
                 color: App.$second-font-color;
                 text-transform: uppercase;
+                transition: ease all 0.2s;
+                
+
+
+                &:hover{
+                    background-color:App.$second-font-color;
+                    border: 2px solid App.$main-theme;
+                    color: App.$main-theme;
+                }
             }
         }
     }

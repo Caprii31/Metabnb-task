@@ -12,7 +12,7 @@ function Hero() {
             <h1 id="hero__text--header">rent a <span>place</span> away from <span>home</span> in the <span>metaverse</span></h1>
             <p id="hero__text--par">we provide you access to luxury and affordable houses <br /> in the metaverse, get a chance to turn your <br /> imagination to reality at your comfort zone</p>
             <div id="hero__text--search">
-                <input type="text" />
+                <input type="text" placeholder="Search"/>
                 <button className="hero__text--search--btn btn">search</button>
             </div>
         </section>
@@ -22,6 +22,7 @@ function Hero() {
             <img src={heroImg3} alt="" className="hero__images--img" />
             <img src={heroImg4} alt="" className="hero__images--img" />
         </section>
+        
     </section>
   )
 }
